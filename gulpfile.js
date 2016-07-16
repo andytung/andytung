@@ -46,21 +46,11 @@ gulp.task('jade', () => {
 });
 
 
-gulp.task('js', () => {
-    gulp.src('assets/**/*.js')
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(gulp.dest('assets'))
-});
-
-
 gulp.task('watch', () => {
     gulp.watch('assets/**/*.scss', ['sass']);
     gulp.watch('assets/**/*.jade', ['jade']);
-    gulp.watch('assets/**/*.js', ['js']);
     gulp.watch(['index.html', '404.html'], ['reload']);
 });
 
 
-gulp.task('default', ['browser-sync', 'sass', 'jade', 'js', 'watch']);
+gulp.task('default', ['browser-sync', 'sass', 'jade', 'watch']);
