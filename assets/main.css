@@ -1170,9 +1170,25 @@ table {
         -ms-flex-order: 1;
             order: 1; } }
 
-h1 {
-  font-size: 72px;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   color: #F7F4F4; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 72px; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+h4 {
+  font-size: 24px; }
 
 .center-text {
   display: -webkit-box;
@@ -1196,6 +1212,8 @@ h1 {
 
 .landing-page {
   height: 100vh;
-  background-image: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(255, 0, 0, 0.45))), url(./sections/header/landing-page.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(./sections/header/landing-page.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(./sections/header/landing-page.jpg);
   background-size: cover;
   background-position: center; }
