@@ -1193,7 +1193,13 @@ h4 {
 ul {
   list-style: none; }
 
-.center-text {
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.text-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
