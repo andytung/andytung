@@ -1170,10 +1170,6 @@ h4 {
   color: #F7F4F4;
   font-size: 24px; }
 
-span {
-  color: #1D6876;
-  font-size: 20px; }
-
 ul {
   list-style: none; }
 
@@ -1220,6 +1216,10 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center; }
+
+.leading-text {
+  color: #1D6876;
+  font-size: 20px; }
 
 .landing-page {
   height: 100vh;
