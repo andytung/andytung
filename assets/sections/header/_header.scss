@@ -1,8 +1,8 @@
 .landing-page {
   height: 100vh;
-  background: 
+  background:
     linear-gradient(
-		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45),
 		rgba(255, 0, 0, 0.45)
     ), url(./sections/header/landing-page.jpg);
   background: {
@@ -11,4 +11,5 @@
   }
 }
 
-@import '../../partials/landingheadline/_landingheadline.scss';
+@import '../../partials/navigation-bar/_navigation-bar.scss';
+@import '../../partials/landing-headline/_landing-headline.scss';

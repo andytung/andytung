@@ -1,29 +1,70 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
-	color: $color-grey-light;
+	background: $color-grey-light;
+	// font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
 
+// Title
 h1 {
+	color: $color-grey-light;
 	font-size: 72px;
 }
 
+// Section title
 h2 {
+	color: $color-red-primary;
 	font-size: 48px;
 }
 
+// Section subtitle
 h3 {
+	color: $color-blue-dark;
 	font-size: 36px;
 }
 
+// Navigation items
 h4 {
+	color: $color-grey-light;
 	font-size: 24px;
+}
+
+// Accent text
+span {
+	color: $color-blue-dark;
+	font-size: 20px;
 }
 
 ul {
   list-style: none;
+}
+
+// List items
+li {
+	font-size: 24px;
+	a {
+		text-decoration: none;
+		color: $color-grey-light;
+		&:hover {
+			color: $color-red-primary;
+		}
+	}
+}
+
+// Regular text
+p {
+	color: $color-grey-dark;
+	font-size: 16px;
+	line-height: 225%;
+}
+
+// Section
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
 }

@@ -2,7 +2,6 @@ let gulp        = require('gulp');
 let browserSync = require('browser-sync');
 let sass        = require('gulp-sass');
 let jade        = require('gulp-jade');
-let babel       = require('gulp-babel');
 let prefix      = require('gulp-autoprefixer');
 
 
