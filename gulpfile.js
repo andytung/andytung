@@ -48,7 +48,7 @@ gulp.task('jade', () => {
 gulp.task('watch', () => {
     gulp.watch('assets/**/*.scss', ['sass']);
     gulp.watch('assets/**/*.jade', ['jade']);
-    gulp.watch(['index.html', '404.html'], ['reload']);
+    gulp.watch(['index.html', '404.html', 'assets/index.js'], ['reload']);
 });
 
 

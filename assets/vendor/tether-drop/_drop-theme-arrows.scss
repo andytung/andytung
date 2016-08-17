@@ -1,0 +1,12 @@
+@import '_tether.scss';
+@import '_tether-theme-arrows.scss';
+
+$themePrefix: "drop";
+$themeName: "arrows";
+$arrowSize: 16px;
+$backgroundColor: $color-white;
+$color: $color-grey-dark;
+$useDropShadow: true;
+
+@include tether($themePrefix: $themePrefix);
+@include tether-theme-arrows($themePrefix: $themePrefix, $themeName: $themeName, $arrowSize: $arrowSize, $backgroundColor: $backgroundColor, $color: $color, $useDropShadow: $useDropShadow);
