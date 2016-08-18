@@ -1309,15 +1309,18 @@ figcaption {
   letter-spacing: .1em; }
 
 .drop-target {
-  margin-top: 550px; }
+  padding-top: 550px; }
 
 .drop-content {
-  margin: 0 15px;
   height: 500px; }
   .drop-content h4 {
     color: #1D6876; }
   .drop-content span {
     color: #D99351; }
+
+.drop {
+  width: 95%;
+  margin: 0 auto; }
 
 .drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before {
   -webkit-box-sizing: border-box;

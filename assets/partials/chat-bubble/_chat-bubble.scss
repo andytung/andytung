@@ -1,5 +1,5 @@
 .drop-target {
-  margin-top: 550px;
+  padding-top: 550px;
 }
 
 .drop-content {
@@ -9,6 +9,13 @@
   span {
     color: $color-orange;
   }
-  margin: 0 15px;
   height: 500px;
+}
+
+.drop {
+  // margin: 0 15px;
+  // left: 0px;
+  // position: relative;
+  width: 95%;
+  margin: 0 auto;
 }
