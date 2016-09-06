@@ -6,41 +6,71 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	background: $color-grey-light;
+	font-size: 16px;
 }
 
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
+	margin: 0;
 }
 
 // Title
+
 h1 {
-	color: $color-grey-light;
 	font-size: 72px;
+	color: $color-white;
 }
 
 // Section title
+
 h2 {
-	color: $color-red-primary;
 	font-size: 48px;
+	color: $color-red-primary;
 }
 
 // Section subtitle
+
 h3 {
-	color: $color-blue-dark;
 	font-size: 36px;
 }
 
-// Navigation items
+// Navigation items, subtitle, resume
+
 h4 {
-	color: $color-grey-light;
 	font-size: 24px;
+	color: $color-white;
 }
+
+h5 {
+	font-size: 20px;
+}
+
+// Large text
+
+h6 {
+	font-size: 18px;
+}
+
+// Dates
+
+small {
+	font-size: 14px;
+}
+
+
+// Github links
 
 a {
 	color: $color-blue-light;
-	font-size: 20px;
 	&:hover {
 		color: $color-red-light;
+	}
+}
+
+a.reverse {
+	color: $color-red-light;
+	&:hover {
+		color: $color-blue-light;
 	}
 }
 
@@ -49,6 +79,7 @@ ul {
 }
 
 // List items
+
 li {
 	font-size: 24px;
 	a {
@@ -61,15 +92,16 @@ li {
 }
 
 // Regular text
+
 p {
 	color: $color-grey-dark;
-	font-size: 16px;
 	line-height: 225%;
 }
 
 // Section
+
 section {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2em;
 }

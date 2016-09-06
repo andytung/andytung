@@ -1,6 +1,7 @@
 .landing-page {
-  margin: 0;
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   background:
     linear-gradient(
@@ -13,5 +14,42 @@
   }
 }
 
-@import '../../partials/navigation-bar/_navigation-bar.scss';
-@import '../../partials/landing-headline/_landing-headline.scss';
+.navigation {
+  ul {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 2em;
+  }
+}
+
+.nav-item {
+  padding: 1em;
+}
+
+.landing-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 130px;
+}
+
+.headline-item {
+  padding: 0.2em;
+}
+
+@media only screen and (min-width: 48em) { // 768px
+
+}
+
+@media only screen and (min-width: 64em) { // 1024px
+  .navigation {
+    ul {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@media only screen and (min-width: 75em) { // 1200px
+
+}

@@ -1,7 +1,3 @@
-.flex {
-	display: flex;
-}
-
 .text-center {
 	display: flex;
 	flex-direction: column;
@@ -14,4 +10,9 @@
 .leading-text {
 	color: $color-blue-dark;
 	font-size: 20px;
+}
+
+.section-title {
+	padding-top: 1.5em;
+	padding-bottom: 0.2em;
 }

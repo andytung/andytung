@@ -1,19 +1,6 @@
-.row
-  .polaroid-container
-    .polaroid.col-xs-12
-      .polaroid-img
-        .gloss
-          img(src="assets/partials/polaroid/yukinon.jpg")
-      figcaption Lorem Ipsum
-
-    .polaroid.col-xs-12
-      .polaroid-img 
-        .gloss
-          img(src="assets/partials/polaroid/yukinon.jpg")
-      figcaption Lorem Ipsum
-
-    .polaroid.col-xs-12
-      .polaroid-img 
-        .gloss
-          img(src="assets/partials/polaroid/yukinon.jpg")
-      figcaption Lorem Ipsum
+mixin polaroid(image, caption)
+  .polaroid
+    .polaroid-img
+      .gloss
+        img(src= image)
+    figcaption= caption
