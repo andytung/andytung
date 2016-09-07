@@ -1,4 +1,5 @@
 include ../../partials/polaroid/_polaroid.jade
+include ../../partials/chat-bubble/_chat-bubble.jade
 
 section.about
   .row
@@ -19,5 +20,13 @@ section.about
       +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
       +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
       +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
-  
-  include ../../partials/chat-bubble/_chat-bubble.jade
+  .row.center-xs
+    .chat-bubble-container.col-xs-12.col-lg-4
+      .row.middle-sm.end-md.reverse
+        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
+    .chat-bubble-container.col-xs-12.col-lg-4
+      .row.middle-sm.end-md.reverse
+        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
+    .chat-bubble-container.col-xs-12.col-lg-4
+      .row.middle-sm.end-md.reverse
+        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')

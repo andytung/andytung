@@ -1,12 +1,4 @@
-.text-center {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-// Accent text
+// Accent text on about section
 .leading-text {
 	color: $color-blue-dark;
 	font-size: 20px;

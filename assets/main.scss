@@ -7,8 +7,8 @@
 @import 'base/_theme.scss';
 @import 'base/_styles.scss';
 
+@import 'vendor/tether-drop/_drop-theme-arrows.scss';
+
 @import 'sections/header/_header.scss';
 @import 'sections/about/_about.scss';
 @import 'sections/projects/_projects.scss';
-
-@import 'vendor/tether-drop/_drop-theme-arrows.scss';

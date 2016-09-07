@@ -1,18 +1,74 @@
 .drop-target {
-  padding-top: 550px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .drop-content {
-  h4 {
-    color: $color-blue-dark;
-  }
   span {
     color: $color-orange;
   }
-  height: 500px;
+  height: 400px;
 }
 
-.drop {
-  width: 95%;
-  margin: 0 auto;
+.drop-element {
+	position: static;
+}
+
+.chat-bubble-container {
+	margin: 2em auto;
+}
+
+@media only screen and (min-width: 48em) { // 768px sm
+	.drop-target {
+	  padding-top: 0px;
+	}
+
+	.drop-element.drop-theme-arrows {
+		&.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+			margin-left: $arrowSize;
+			margin-bottom: 0;
+
+			&:before {
+			  right: 100%;
+			  top: 50%;
+			  left: 0%;
+			  margin-top: -$arrowSize;
+			  border-right-color: $backgroundColor;
+			  border-left: 0;
+			  border-top-color: transparent;
+			  border-bottom: $arrowSize solid transparent;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 64em) { // 1024px md
+
+}
+
+@media only screen and (min-width: 75em) { // 1200px lg
+
+	.drop-content {
+		height: 500px;
+	}
+
+	.drop-element.drop-theme-arrows {
+		&.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+			margin-left: 0;
+			margin-bottom: $arrowSize;
+
+			&:before {
+			  right: 0%;
+			  top: 100%;
+			  left: 50%;
+			  margin-left: -$arrowSize;
+			  margin-top: 0;
+			  border-top-color: $backgroundColor;
+			  border-bottom: 0;
+			  border-right-color: transparent;
+			  border-left: 16px solid transparent;
+			}
+		}
+	}
 }
