@@ -1442,7 +1442,7 @@ figcaption {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: auto; }
+  width: 300px; }
 
 .drop-content .drop-content-container {
   text-align: center;
