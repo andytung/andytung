@@ -1157,7 +1157,7 @@ body {
   background: #F7F4F4;
   font-size: 16px; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   font-weight: normal;
   margin: 0; }
 
@@ -1170,7 +1170,8 @@ h2 {
   color: #C0392B; }
 
 h3 {
-  font-size: 36px; }
+  font-size: 36px;
+  color: #1D6876; }
 
 h4 {
   font-size: 24px;
@@ -1223,8 +1224,21 @@ section {
   font-size: 20px; }
 
 .section-title {
-  padding-top: 1.5em;
-  padding-bottom: 0.2em; }
+  margin: 1.5em 0 0.7em; }
+
+.section-subtitle {
+  margin: 0.5em 0; }
+
+.image-container {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .drop-element, .drop-element:after, .drop-element:before, .drop-element *, .drop-element *:after, .drop-element *:before {
   -webkit-box-sizing: border-box;
@@ -1429,9 +1443,11 @@ figcaption {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.drop-content {
-  height: 400px; }
-  .drop-content span {
+.drop-content .drop-content-container {
+  text-align: center;
+  height: 500px;
+  margin: 0.6em; }
+  .drop-content .drop-content-container span {
     color: #D99351; }
 
 .drop-element {
@@ -1443,6 +1459,8 @@ figcaption {
 @media only screen and (min-width: 48em) {
   .drop-target {
     padding-top: 0px; }
+  .drop-content {
+    height: 400px; }
   .drop-element.drop-theme-arrows.drop-element-attached-bottom.drop-element-attached-center .drop-content {
     margin-left: 16px;
     margin-bottom: 0; }
@@ -1472,3 +1490,6 @@ figcaption {
       border-bottom: 0;
       border-right-color: transparent;
       border-left: 16px solid transparent; } }
+
+.project-tools {
+  color: #D95E51; }

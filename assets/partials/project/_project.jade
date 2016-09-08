@@ -1,10 +1,15 @@
-mixin project(name, link, content, tools)
-  .row
-    .col-xs-12
-      h3= name
-    .col-xs-12
-      a= link
-    .col-xs-12
-      p= content
-    .col-xs-12
-      h6= tools
+mixin project(name, link, content, tools, img)
+	.project-container.col-xs-12.col-md-5
+		.row
+			.col-xs-12
+				h3.section-subtitle= name
+			.col-xs-12
+				a= link
+			.col-xs-12
+				p= content
+			.col-xs-12
+				p.project-tools= tools
+
+	.col-xs-12.col-md-5
+		.image-container
+			img(src= img)

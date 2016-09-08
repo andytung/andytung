@@ -3,7 +3,8 @@ include ../../partials/chat-bubble/_chat-bubble.jade
 
 section.about
   .row
-    h2.section-title.col-xs-12.col-sm-9.col-md-7 About Me
+    h2.section-title.col-xs-12 About Me
+  .row
     p.col-xs-12.col-sm-9.col-md-7 
       span.leading-text Lorem ipsum dolor sit amet, 
       | consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. 
@@ -21,12 +22,6 @@ section.about
       +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
       +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
   .row.center-xs
-    .chat-bubble-container.col-xs-12.col-lg-4
-      .row.middle-sm.end-md.reverse
-        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
-    .chat-bubble-container.col-xs-12.col-lg-4
-      .row.middle-sm.end-md.reverse
-        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
-    .chat-bubble-container.col-xs-12.col-lg-4
-      .row.middle-sm.end-md.reverse
-        +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
+    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
+    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi2.png')
+    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi3.png')

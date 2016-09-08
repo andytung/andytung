@@ -5,6 +5,15 @@
 }
 
 .section-title {
-	padding-top: 1.5em;
-	padding-bottom: 0.2em;
+	margin: 1.5em 0 0.7em;
+}
+
+.section-subtitle {
+	margin: 0.5em 0;
+}
+
+.image-container {
+	margin: 2em 0;
+	display: flex;
+	justify-content: center;
 }

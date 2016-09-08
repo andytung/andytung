@@ -5,10 +5,14 @@
 }
 
 .drop-content {
-  span {
-    color: $color-orange;
-  }
-  height: 400px;
+	.drop-content-container {
+		span {
+		  color: $color-orange;
+		}
+		text-align: center;
+		height: 500px;
+		margin: 0.6em;
+	}
 }
 
 .drop-element {
@@ -20,11 +24,17 @@
 }
 
 @media only screen and (min-width: 48em) { // 768px sm
+	
 	.drop-target {
 	  padding-top: 0px;
 	}
 
+	.drop-content {
+		height: 400px;
+	}
+
 	.drop-element.drop-theme-arrows {
+
 		&.drop-element-attached-bottom.drop-element-attached-center .drop-content {
 			margin-left: $arrowSize;
 			margin-bottom: 0;
@@ -44,7 +54,6 @@
 }
 
 @media only screen and (min-width: 64em) { // 1024px md
-
 }
 
 @media only screen and (min-width: 75em) { // 1200px lg

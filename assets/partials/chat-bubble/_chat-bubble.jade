@@ -1,10 +1,13 @@
 mixin chat-bubble(title, pre, highlight, post, target)
-  .drop.drop-theme-arrows.drop-element.drop-element-attached-bottom.drop-element-attached-center.drop-open.col-xs-12.col-sm-8.col-md-7.col-lg-12
-    .drop-content
-      h4= title
-      p= pre
-        span= highlight
-        = post
+	.chat-bubble-container.col-xs-12.col-lg-4
+		.row.middle-sm.end-md.reverse
+			.drop.drop-theme-arrows.drop-element.drop-element-attached-bottom.drop-element-attached-center.drop-open.col-xs-12.col-sm-8.col-md-7.col-lg-12
+				.drop-content
+					.drop-content-container
+						h4.section-subtitle= title
+						p= pre
+							span= highlight
+							= post
 
-  .drop-target.col-xs-12.col-sm-4.col-lg-12
-    img(src=target)
+			.drop-target.col-xs-12.col-sm-4.col-lg-12
+				img(src=target)
