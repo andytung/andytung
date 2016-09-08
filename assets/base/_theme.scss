@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
 	font-size: 72px;
-	color: $color-white;
+	color: $color-grey-light;
 }
 
 // Section title
@@ -43,9 +43,10 @@ h4 {
 }
 
 // Navigation items
-h5 {
+
+h5, li {
 	font-size: 24px;
-	color: $color-white;
+	color: $color-grey-light;
 	font-weight: lighter;
 }
 
@@ -85,8 +86,6 @@ ul {
 // List items
 
 li {
-	font-size: 24px;
-	font-weight: lighter;
 	a {
 		text-decoration: none;
 		color: $color-grey-light;

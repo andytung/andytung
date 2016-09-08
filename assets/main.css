@@ -1163,7 +1163,7 @@ h1, h2, h3, h4, h5, p {
 
 h1 {
   font-size: 72px;
-  color: #FFFFFF; }
+  color: #F7F4F4; }
 
 h2 {
   font-size: 48px;
@@ -1177,9 +1177,9 @@ h4 {
   font-size: 24px;
   color: #1D6876; }
 
-h5 {
+h5, li {
   font-size: 24px;
-  color: #FFFFFF;
+  color: #F7F4F4;
   font-weight: lighter; }
 
 h6 {
@@ -1201,14 +1201,11 @@ a.reverse {
 ul {
   list-style: none; }
 
-li {
-  font-size: 24px;
-  font-weight: lighter; }
-  li a {
-    text-decoration: none;
-    color: #F7F4F4; }
-    li a:hover {
-      color: #C0392B; }
+li a {
+  text-decoration: none;
+  color: #F7F4F4; }
+  li a:hover {
+    color: #C0392B; }
 
 p {
   color: #352F2E;
