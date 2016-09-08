@@ -1363,7 +1363,7 @@ section {
   font-family: "Rock Salt", sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  width: 300px;
+  min-width: 300px;
   height: 360px;
   background: #FFF;
   background: -webkit-linear-gradient(330deg, #fff, #DDD 70%);
@@ -1426,7 +1426,17 @@ figcaption {
             justify-content: flex-end;
     margin: 8em 2em; }
   .polaroid {
-    margin: 0 -1.5em; } }
+    margin: 0 -1.5em; }
+  .polaroid-content {
+    min-width: 900px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media only screen and (min-width: 75em) {
   .polaroid {
@@ -1442,7 +1452,7 @@ figcaption {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 300px; }
+  min-width: 300px; }
 
 .drop-content .drop-content-container {
   text-align: center;

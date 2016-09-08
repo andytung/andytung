@@ -12,7 +12,7 @@
   font-family: "Rock Salt", sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  width: 300px;
+  min-width: 300px;
   height: 360px;
   background: #FFF;
   background: linear-gradient(120deg, #fff, #DDD 70%);
@@ -72,6 +72,12 @@ figcaption {
 
   .polaroid {
     margin: 0 -1.5em;
+  }
+  
+  .polaroid-content {
+    min-width: 900px;
+    display: flex;
+    justify-content: center;
   }
 }
 
