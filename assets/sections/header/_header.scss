@@ -1,7 +1,7 @@
 .landing-page {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   height: 100vh;
   background:
     linear-gradient(
@@ -15,10 +15,16 @@
 }
 
 .navigation {
+  position: absolute;
   ul {
     display: flex;
     flex-direction: column-reverse;
     margin-right: 2em;
+    margin-top: 30px;
+
+    li {
+      margin: 2px;
+    }
   }
 }
 
@@ -47,6 +53,7 @@
     ul {
       flex-direction: row-reverse;
     }
+    right: 0;
   }
 }
 

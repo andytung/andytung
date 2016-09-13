@@ -60,12 +60,15 @@ h6 {
 
 small {
 	font-size: 14px;
+	font-weight: lighter;
+	color: $color-grey-light;
 }
 
 
 // Github links
 
 a {
+	text-decoration: none;
 	color: $color-blue-light;
 	&:hover {
 		color: $color-red-light;
@@ -73,6 +76,7 @@ a {
 }
 
 a.reverse {
+	text-decoration: none;
 	color: $color-red-light;
 	&:hover {
 		color: $color-blue-light;
@@ -84,6 +88,10 @@ ul {
 }
 
 // List items
+
+hr {
+	width: 100%;
+}
 
 li {
 	a {
@@ -102,9 +110,14 @@ p {
 	line-height: 225%;
 }
 
+hr {
+	border: none;
+	border-top: 1px solid $color-grey-light;
+}
+
 // Section
 
-section {
+section, .footer-content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em;

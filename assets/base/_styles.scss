@@ -17,3 +17,12 @@
 	display: flex;
 	justify-content: center;
 }
+
+.button {
+	background-color: $color-red-light;
+	color: $color-grey-light;
+	border: 0;
+	box-shadow: 0 0 20px 0px $color-grey-dark;
+	width: 300px;
+	height: 60px;
+}
