@@ -1451,6 +1451,7 @@ figcaption {
           justify-content: center;
   width: 300px; }
   .drop-target img {
+    max-width: 300px;
     height: 100%;
     width: 100%; }
 
