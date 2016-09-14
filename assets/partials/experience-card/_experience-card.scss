@@ -1,0 +1,23 @@
+.experience-container {
+	background-color: $color-white;
+  border: 1px solid $color-grey-dark;
+  box-shadow: 3px 3px 5px 2px #ccc;
+  margin: 50px;
+  padding: 50px;
+}
+
+.experience-image {
+  text-align: center;
+	img {
+		height: 300px;
+		width: auto;
+	}
+}
+
+.experience-date {
+  small {
+    color: $color-red-light;
+  }
+  text-align: center;
+  justify-content: center;
+}

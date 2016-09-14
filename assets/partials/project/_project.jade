@@ -1,15 +1,16 @@
 mixin project(name, link, content, tools, img)
-	.project-container.col-xs-12.col-md-5
-		.row
-			.col-xs-12
-				h3.section-subtitle= name
-			.col-xs-12
-				a= link
-			.col-xs-12
-				p= content
-			.col-xs-12
-				p.project-tools= tools
+	.row.between-xs
+		.project-container.col-xs-12.col-md-5
+			.row
+				.col-xs-12
+					h3.section-subtitle= name
+				.col-xs-12
+					a= link
+				.col-xs-12
+					p= content
+				.col-xs-12
+					p.project-tools= tools
 
-	.col-xs-12.col-md-5
-		.image-container
-			img(src= img)
+		.col-xs-12.col-md-5
+			.project-image
+				img(src= img)

@@ -1535,6 +1535,33 @@ figcaption {
 .project-tools {
   color: #D95E51; }
 
+.project-image img {
+  height: 350px;
+  width: auto; }
+
+.experience-container {
+  background-color: #FFFFFF;
+  border: 1px solid #352F2E;
+  -webkit-box-shadow: 3px 3px 5px 2px #ccc;
+          box-shadow: 3px 3px 5px 2px #ccc;
+  margin: 50px;
+  padding: 50px; }
+
+.experience-image {
+  text-align: center; }
+  .experience-image img {
+    height: 300px;
+    width: auto; }
+
+.experience-date {
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .experience-date small {
+    color: #D95E51; }
+
 footer {
   background-color: #352F2E; }
 
