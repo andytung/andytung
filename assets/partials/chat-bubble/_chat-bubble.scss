@@ -64,6 +64,10 @@
 
 @media only screen and (min-width: 75em) { // 1200px lg
 
+  .drop-target {
+    padding-top: 25px;
+  }
+
 	.drop-content {
 		height: 500px;
 	}

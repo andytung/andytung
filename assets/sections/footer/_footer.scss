@@ -42,6 +42,10 @@ footer {
 }
 
 @media only screen and (min-width: 48em) { // 768px
+  .footer-content {
+    width: 95%;
+  }
+
   .button {
     width: 550px;
   }
@@ -56,9 +60,6 @@ footer {
 }
 
 @media only screen and (min-width: 64em) { // 1024px
-  .footer-content {
-    flex-direction: column;
-  }
 
   .button-group {
     padding-top: 65px;
@@ -79,6 +80,10 @@ footer {
 }
 
 @media only screen and (min-width: 75em) { // 1200px
+  .footer-content {
+    width: 95%;
+  }
+
   .button {
     width: 350px;
   }
