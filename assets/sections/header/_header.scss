@@ -19,11 +19,14 @@
   ul {
     display: flex;
     flex-direction: column-reverse;
-    margin-right: 2em;
-    margin-top: 30px;
+    margin: 30px 2em 0em;
 
     li {
-      margin: 2px;
+      span {
+        margin: 0 0.5em;
+        padding: 0;
+      }
+      margin: 4px;
     }
   }
 }

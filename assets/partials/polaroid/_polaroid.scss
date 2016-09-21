@@ -5,7 +5,7 @@
 @import 'https://fonts.googleapis.com/css?family=Rock+Salt';
 
 .polaroid-container {
-  margin: 8em auto;
+  margin: 10em auto;
 }
 
 .polaroid {
@@ -71,7 +71,7 @@ figcaption {
   }
 
   .polaroid {
-    margin: 0 -1.5em;
+    margin: 4em -1.5em;
   }
   
   .polaroid-content {
@@ -87,6 +87,6 @@ figcaption {
 
 @media only screen and (min-width: 75em) { // 1200px
   .polaroid {
-    margin: 0 -1em;
+    margin: 4em -1em;
   }
 }
