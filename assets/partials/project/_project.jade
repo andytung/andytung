@@ -1,16 +1,11 @@
-mixin project(name, link, content, tools, img)
-	.row.between-xs
-		.project-container.col-xs-12.col-md-5
-			.row
-				.col-xs-12
-					h3.section-subtitle= name
-				.col-xs-12
-					a= link
-				.col-xs-12
-					p= content
-				.col-xs-12
-					p.project-tools= tools
-
-		.col-xs-12.col-md-5.center-sm
-			.project-image
-				img(src= img)
+mixin project(name, link, content, tools)
+	.col-xs-12.col-md-5.project-container
+		.row
+			.col-xs-12
+				h3.section-subtitle= name
+			.col-xs-12
+				a(href=link, target="_blank")= link
+			.col-xs-12
+				p= content
+			.col-xs-12
+				p.project-tools= tools

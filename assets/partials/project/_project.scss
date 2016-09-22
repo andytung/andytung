@@ -3,8 +3,21 @@
 }
 
 .project-image {
+	display: flex;
+	justify-content: center;
 	img {
-		height: 350px;
+		width: 360px;
 		width: auto;
+	}
+}
+
+.project-container {
+	padding: 25px 0;
+	margin: 25px 0;
+}
+
+@media only screen and (min-width: 64em) { // 1024px
+	.project-container {
+		margin: 75px 0;
 	}
 }
