@@ -6,23 +6,29 @@ section.about#about
     h2.section-title.col-xs-12 About Me
   .row
     p.col-xs-12.col-sm-9.col-md-7 
-      span.leading-text Lorem ipsum dolor sit amet, 
-      | consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. 
-      | Mauris elit orci, ultricies id fermentum vel, porta et eros. 
-      | Vestibulum condimentum lectus in convallis feugiat. Sed vulputate fringilla felis. 
-      | Aliquam ut arcu et dui feugiat scelerisque eu quis diam. Mauris placerat congue dui sit amet blandit. 
-      | Phasellus condimentum libero vel velit auctor, sit amet tincidunt velit varius. 
+      span.leading-text Hi, nice to meet you! 
+      | My name is Andy. I am a computer engineering student at the University of British Columbia. 
+      | I like what I do. I find joy in taking lines of code and smashing it all together into
+      | something beautiful. I enjoy reading HackerNews and /r/programming, watching GOTO Conference or
+      | Google I/O recordings, and attending hackathons.
+      | The tools I am interested in learning are Reactive Programming, Angular 2, 
+      | Erlang, Clojure, Rust, Go, Scala, Elixir, Haskell, Redis, CassandraDB, and PostgreSQL.
+      | I strongly believe in the hacker's culture where together as a community we will
+      | be able to create amazing technology and make the world a better place.
       br
       br
-      | Mauris lacinia porta faucibus. Fusce eu est ac eros vulputate mollis in ac felis. 
-      | Aenean commodo scelerisque mi sed imperdiet. Donec at hendrerit nisi, eget vestibulum nisi.
+      | Aside from programming, I like hiking, swimming, snowboarding, and watching anime.
+      | I am actually very friendly to talk to. Don't be afraid to send me 
+      a(href="mailto:andyytung@gmail.com") an email
+      | . I would be glad to hear from you.
+
   .row.center-xs.end-md
     .polaroid-content
       .polaroid-container
-        +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
-        +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
-        +polaroid('assets/partials/polaroid/yukinon.jpg', 'Lorem Ipsum')
+        +polaroid('https://scontent-sea1-1.xx.fbcdn.net/t31.0-8/219792_10150165029429938_7460856_o.jpg', 'In Italy')
+        +polaroid('https://scontent-sea1-1.xx.fbcdn.net/t31.0-8/334481_10151220444904938_2064819723_o.jpg', 'Im a Nerd')
+        +polaroid('https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/935695_10151583319919938_1494465688_n.jpg?oh=3e8b23c58249a73a1bbe7cf005203791&oe=586DEFAF', 'Hi :)')
   .row.center-xs
-    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi1.png')
-    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi2.png')
-    +chat-bubble('Lorem ipsum', '', 'Lorem ipsum ', 'dolor sit amet, consectetur adipiscing elit. Cras dapibus vulputate diam eu pretium. Mauris elit orci, ultricies id fermentum vel, porta et eros. Vestibulum condimentum lectus in convallis feugiat.', 'assets/partials/chat-bubble/chibi3.png')
+    +chat-bubble('Skills', 'I want to be a ', 'full stack developer', '. When I first started programming, the MEAN stack was really popular, so I picked up writing backend servers in NodeJS and Express from tutorials. Working at Dynamic Leap taught me how to create enterprise iOS and Android applications, and till this day, I am still trying to chase down the rapidly changing front end web.', 'assets/partials/chat-bubble/chibi1.png')
+    +chat-bubble('Hobbies', 'I love to ', 'meet people', ". It is always a pleasure when people share their background, goals, and story. I believe everyone has a story that took them to where they are currently. To be able to learn about someone with just a few exchanging of words is magical thing.", 'assets/partials/chat-bubble/chibi2.png')
+    +chat-bubble('Values', 'I believe in ', 'autonomy', '. Not that I think we should all be secluded and do our own things, but because I trust in people to do what is right. For example, I do not think developers need to be micromanaged to bring value to a company. The company should have goals, and trust their employees to handle the communication and discipline needed to carry out those goals.', 'assets/partials/chat-bubble/chibi3.png')
