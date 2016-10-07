@@ -12,12 +12,12 @@
 }
 
 .project-container {
-	padding: 25px 0;
-	margin: 25px 0;
+	padding: 0 0 50px;
+	margin: 0 0 25px;
 }
 
 @media only screen and (min-width: 64em) { // 1024px
 	.project-container {
-		margin: 75px 0;
+		margin: 0 0 75px;
 	}
 }
