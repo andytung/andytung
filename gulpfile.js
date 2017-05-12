@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 let paths = {
     stylesSrc: './src/styles/**/*.css',
     stylesDest: './dest/styles',
-    viewsSrc: './src/views/**/*.pug',
+    viewsSrc: './src/views/index.pug',
     viewsDest: '.'
 }
 
@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', () => {
     return gulp.src(paths.stylesSrc)
-        .pipe(postcss(plugins))
+        .pipe(postcss(plugins).on('error', handleError))
         .pipe(gulp.dest(paths.stylesDest));
 });
 
@@ -42,13 +42,13 @@ gulp.task('views', () => {
 gulp.task('watch', () => {
     gulp.watch(paths.stylesSrc, ['styles'])
         .on('change', browserSync.reload)
-        .on('error', swallowError);
+        .on('error', handleError);
     gulp.watch(paths.viewsSrc, ['views'])
         .on('change', browserSync.reload)
-        .on('error', swallowError);
+        .on('error', handleError);
 });
 
-const swallowError = () => {
+function handleError(error) {
     console.log(error.toString());
     this.emit('end');
 }

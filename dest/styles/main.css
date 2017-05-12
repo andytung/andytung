@@ -1,3 +1,77 @@
+:root {
+    // primary theme color red
+    --color-red-primary: #C0392B;
+
+    // secondary theme color blue
+    --color-blue-dark: #1D6876;
+
+    // call-for-action success and warning
+    --color-green: #66C17A;
+
+    // shade of grey and white
+    --color-grey-dark: #352F2E;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Varela');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: red;
+	font-family: 'Varela', sans-serif;
+	background: #F7F4F4;
+    font-size: 16px;
+}
+
+.landing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 55vh;
+    background: linear-gradient(
+		rgba(0, 0, 0, .45),
+		rgba(0, 0, 0, .45)
+    ), url(../images/mobile-landing.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Extra Small Devices, Phones 480px */
+@media only screen and (min-width: 30em) {
+
+}
+
+/* Small Devices, Tablets 768px */
+@media only screen and (min-width: 48em) {
+    .landing {
+        height: 100vh;
+        background: linear-gradient(
+		    rgba(0, 0, 0, .45),
+		    rgba(0, 0, 0, .45)
+        ), url(../images/web-landing.png);
+    background-size: cover;
+    background-position: center;
+    }
+}
+
+/* Medium Devices, Desktops 922px */
+@media only screen and (min-width: 62em) {
+
+}
+
+/* Large Devices, Wide Screens 1200px */
+@media only screen and (min-width: 75em) {
+
 }
