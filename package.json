@@ -1,24 +1,16 @@
 {
-  "name": "andyytung.github.io",
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "gulp build",
     "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/andyytung/andyytung.github.io.git"
-  },
-  "author": "Andy Tung",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/andyytung/andyytung.github.io/issues"
-  },
-  "homepage": "https://github.com/andyytung/andyytung.github.io#readme",
   "devDependencies": {
-  },
-  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "postcss-cssnext": "^2.10.0"
   }
 }
