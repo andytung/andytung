@@ -6,6 +6,19 @@ const lost = require('lost');
 const cssnext = require('postcss-cssnext');
 const browserSync = require('browser-sync').create();
 
+let paths = {
+    stylesSrc: './src/styles/**/*.css',
+    stylesDest: './dest/styles',
+    viewsSrc: './src/views/**/*.pug',
+    viewsDest: '.'
+}
+
+let plugins = [
+    cssnext(),
+    //cssnano(),
+    lost()
+];
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -15,27 +28,22 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', () => {
-    let plugins = [
-        cssnext(),
-        //cssnano(),
-        lost()
-    ];
-    return gulp.src('./src/styles/*.css')
+    return gulp.src(paths.stylesSrc)
         .pipe(postcss(plugins))
-        .pipe(gulp.dest('./dest/styles'));
+        .pipe(gulp.dest(paths.stylesDest));
 });
 
 gulp.task('views', () => {
-    return gulp.src('./src/views/*.pug')
+    return gulp.src(paths.viewsSrc)
         .pipe(pug())
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest(paths.viewsDest));
 });
 
 gulp.task('watch', () => {
-    gulp.watch('src/styles/*.css', ['css'])
+    gulp.watch(paths.stylesSrc, ['styles'])
         .on('change', browserSync.reload)
         .on('error', swallowError);
-    gulp.watch(['index.html', '404.html'])
+    gulp.watch(paths.viewsSrc, ['views'])
         .on('change', browserSync.reload)
         .on('error', swallowError);
 });
