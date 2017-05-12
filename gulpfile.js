@@ -1,8 +1,8 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
-const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const lost = require('lost');
 const cssnext = require('postcss-cssnext');
 const browserSync = require('browser-sync').create();
 
@@ -16,9 +16,9 @@ gulp.task('browser-sync', function() {
 
 gulp.task('styles', () => {
     let plugins = [
-        autoprefixer(),
         cssnext(),
-        //cssnano()
+        //cssnano(),
+        lost()
     ];
     return gulp.src('./src/styles/*.css')
         .pipe(postcss(plugins))
