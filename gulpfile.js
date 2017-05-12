@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
-const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const cssnext = require('postcss-cssnext');
@@ -19,12 +18,10 @@ gulp.task('styles', () => {
     let plugins = [
         autoprefixer(),
         cssnext(),
-        cssnano()
+        //cssnano()
     ];
     return gulp.src('./src/styles/*.css')
-        .pipe(sourcemaps.init())
         .pipe(postcss(plugins))
-        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dest/styles'));
 });
 
