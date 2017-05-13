@@ -10,6 +10,7 @@ let paths = {
     stylesSrc: './src/styles/**/*.css',
     stylesDest: './dest/styles',
     viewsSrc: './src/views/index.pug',
+    viewsWatchSrc: './src/views/**/*.pug',
     viewsDest: '.'
 }
 
@@ -43,7 +44,7 @@ gulp.task('watch', () => {
     gulp.watch(paths.stylesSrc, ['styles'])
         .on('change', browserSync.reload)
         .on('error', handleError);
-    gulp.watch(paths.viewsSrc, ['views'])
+    gulp.watch(paths.viewsWatchSrc, ['views'])
         .on('change', browserSync.reload)
         .on('error', handleError);
 });

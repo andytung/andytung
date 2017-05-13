@@ -14,6 +14,7 @@
     // shade of grey and white
     --color-grey-dark: #352F2E;
     --color-grey-light: #F7F4F4;
+    --color-grey-lighter: #FEFEFE;
     --color-white: #FFFFFF;
 }
 
@@ -26,7 +27,25 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: var(--color-grey-light);
+	background: var(--color-grey-lighter);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h5 {
+    font-weight: normal;
+    color: var(--color-grey-light);
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h5 {
     font-size: 16px;
 }
 
@@ -42,6 +61,30 @@ body {
     ), url(../images/mobile-landing.png);
     background-size: cover;
     background-position: center;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tagline {
+    margin: 4px 0 12px;
+}
+
+.tagline-item {
+    margin: 2px;
+}
+
+.icon-item {
+    margin: 10px;
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Extra Small Devices, Phones 480px */
