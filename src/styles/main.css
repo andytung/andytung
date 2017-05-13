@@ -14,6 +14,7 @@
     /* shade of grey and white */
     --color-text-dark: #352F2E;
     --color-text-light: #F7F4F4;
+    --color-background-dark: #352F2E;
     --color-background-light: #FEFEFE;
     --color-white: #FFFFFF;
 }
@@ -27,12 +28,12 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: var(--color-background-lighter);
+	background: var(--color-background-dark);
     color: var(--color-text-dark);
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, p, section, header {
+h1, h2, h3, h4, h5, p, small, hr, section, header, footer, main {
     margin: 0;
     padding: 0;
 }
@@ -40,6 +41,12 @@ h1, h2, h3, h4, h5, p, section, header {
 section {
     margin: 24px;
 }
+
+main {
+    display: flex;
+    background: var(--color-background-light);
+}
+
 
 h1, h5 {
     font-weight: normal;
@@ -51,11 +58,35 @@ h1 {
 }
 
 h5 {
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
+    font-weight: 300;
 }
 
 p {
     font-size: 14px;
+}
+
+small {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: var(--color-text-light);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--color-text-light);
+    lost-column: 1/1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-secondary-light);
+}
+
+a:hover {
+    color: var(--color-primary-light);
 }
 
 .landing {
@@ -70,13 +101,6 @@ p {
     ), url(../images/mobile-landing.png);
     background-size: cover;
     background-position: center;
-}
-
-.headline {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .tagline {
@@ -114,6 +138,36 @@ p {
     color: var(--color-primary-dark);
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+
+.line-top {
+    margin: 20px 0 14px;
+}
+
+.line-bottom {
+    margin: 14px 0 2px;
+}
+
+.quote {
+    lost-column: 1/1;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    text-align: right;
+    lost-column: 1/1;
+}
+
+.resume {
+    text-align: right;
+    lost-column: 1/1;
+    margin: 2px 0 14px;
+}
+
 /* Extra Small Devices, Phones 480px */
 @media only screen and (min-width: 30em) {
 
@@ -127,8 +181,6 @@ p {
 
     h5 {
         font-size: 24px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
     }
 
     section {
@@ -161,6 +213,14 @@ p {
     .icon-image {
         width: 30px;
         height: 30px;
+    }
+
+    .footer {
+        lost-center: 640px;
+    }
+
+    .quote {
+        lost-waffle: 1/2;
     }
 }
 

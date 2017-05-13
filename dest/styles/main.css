@@ -17,12 +17,12 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: var(--color-background-lighter);
+	background: #352F2E;
     color: #352F2E;
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, p, section, header {
+h1, h2, h3, h4, h5, p, small, hr, section, header, footer, main {
     margin: 0;
     padding: 0;
 }
@@ -30,6 +30,14 @@ h1, h2, h3, h4, h5, p, section, header {
 section {
     margin: 24px;
 }
+
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #FEFEFE;
+}
+
 
 h1, h5 {
     font-weight: normal;
@@ -41,11 +49,54 @@ h1 {
 }
 
 h5 {
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
+    font-weight: 300;
 }
 
 p {
     font-size: 14px;
+}
+
+small {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #F7F4F4;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #F7F4F4;
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+
+hr:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+hr:last-child {
+    margin-right: 0;
+}
+
+hr:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+
+hr:nth-child(1n + 1) {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #55929D;
+}
+
+a:hover {
+    color: #D95E51;
 }
 
 .landing {
@@ -69,22 +120,6 @@ p {
     ), url(../images/mobile-landing.png);
     background-size: cover;
     background-position: center;
-}
-
-.headline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 .tagline {
@@ -124,6 +159,98 @@ p {
     color: #C0392B;
 }
 
+.footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 24px;
+}
+
+.line-top {
+    margin: 20px 0 14px;
+}
+
+.line-bottom {
+    margin: 14px 0 2px;
+}
+
+.quote {
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+    margin-bottom: 30px;
+}
+
+.quote:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+.quote:last-child {
+    margin-right: 0;
+}
+
+.quote:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+
+.quote:nth-child(1n + 1) {
+    clear: both;
+}
+
+.copyright {
+    text-align: right;
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+}
+
+.copyright:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+.copyright:last-child {
+    margin-right: 0;
+}
+
+.copyright:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+
+.copyright:nth-child(1n + 1) {
+    clear: both;
+}
+
+.resume {
+    text-align: right;
+    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+    margin: 2px 0 14px;
+}
+
+.resume:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+.resume:last-child {
+    margin-right: 0;
+}
+
+.resume:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+
+.resume:nth-child(1n + 1) {
+    clear: both;
+}
+
 /* Extra Small Devices, Phones 480px */
 @media only screen and (min-width: 30em) {
 
@@ -137,8 +264,6 @@ p {
 
     h5 {
         font-size: 24px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
     }
 
     section {
@@ -184,6 +309,52 @@ p {
     .icon-image {
         width: 30px;
         height: 30px;
+    }
+
+    .footer {
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer:before {
+        content: '';
+        display: table;
+    }
+
+    .footer:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .quote {
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+        height: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+    }
+
+    .quote:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        clear: none;
+    }
+
+    .quote:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .quote:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .quote:nth-child(2n + 1) {
+        clear: both;
+    }
+
+    .quote:nth-last-child(-n + 2) {
+        margin-bottom: 0;
     }
 }
 
