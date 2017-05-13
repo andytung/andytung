@@ -17,7 +17,7 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: #352F2E;
+	background: #1F1C1B;
     color: #352F2E;
     font-size: 16px;
 }
@@ -66,8 +66,8 @@ h5 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 small {
@@ -125,7 +125,8 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 55vh;
+    height: 50vh;
+    min-height: 280px;
     background: linear-gradient(
 		rgba(0, 0, 0, .45),
 		rgba(25, 0, 0, .7)
@@ -155,6 +156,7 @@ a:hover {
     width: 120px;
     height: 120px;
     margin-left: 15px;
+    margin-bottom: 2px;
     float: right;
     -webkit-shape-outside: circle(50%);
             shape-outside: circle(50%);
@@ -216,6 +218,29 @@ a:hover {
 }
 
 .quote:nth-child(1n + 1) {
+    clear: both;
+}
+
+.quote-stub {
+    width: calc(99.9% * 0/1 - (30px - 30px * 0/1));
+}
+
+.quote-stub:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+}
+
+.quote-stub:last-child {
+    margin-right: 0;
+}
+
+.quote-stub:nth-child(1n) {
+    margin-right: 0;
+    float: right;
+}
+
+.quote-stub:nth-child(1n + 1) {
     clear: both;
 }
 
@@ -283,11 +308,6 @@ a:hover {
         font-size: 24px;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     section {
         margin: 24px;
         max-width: 640px;
@@ -315,7 +335,8 @@ a:hover {
     }
 
     .landing {
-        height: 100vh;
+        height: 40vh;
+        min-height: 320px;
         background: linear-gradient(
 		    rgba(0, 0, 0, .45),
 		    rgba(25, 0, 0, .7)
@@ -364,31 +385,48 @@ a:hover {
 
     .quote {
         width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
-        height: calc(99.9% * 1/2 - (30px - 30px * 1/2));
     }
 
     .quote:nth-child(1n) {
         float: left;
         margin-right: 30px;
-        margin-bottom: 30px;
         clear: none;
     }
 
     .quote:last-child {
         margin-right: 0;
-        margin-bottom: 0;
     }
 
     .quote:nth-child(2n) {
         margin-right: 0;
+        float: right;
     }
 
     .quote:nth-child(2n + 1) {
         clear: both;
     }
 
-    .quote:nth-last-child(-n + 2) {
-        margin-bottom: 0;
+    .quote-stub {
+        width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+    }
+
+    .quote-stub:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+
+    .quote-stub:last-child {
+        margin-right: 0;
+    }
+
+    .quote-stub:nth-child(2n) {
+        margin-right: 0;
+        float: right;
+    }
+
+    .quote-stub:nth-child(2n + 1) {
+        clear: both;
     }
 }
 

@@ -14,7 +14,7 @@
     /* shade of grey and white */
     --color-text-dark: #352F2E;
     --color-text-light: #F7F4F4;
-    --color-background-dark: #352F2E;
+    --color-background-dark: #1F1C1B;
     --color-background-light: #FEFEFE;
     --color-white: #FFFFFF;
 }
@@ -72,8 +72,8 @@ h5 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 small {
@@ -103,7 +103,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 55vh;
+    height: 50vh;
+    min-height: 280px;
     background: linear-gradient(
 		rgba(0, 0, 0, 0.45),
 		rgba(25, 0, 0, 0.7)
@@ -133,6 +134,7 @@ a:hover {
     width: 120px;
     height: 120px;
     margin-left: 15px;
+    margin-bottom: 2px;
     float: right;
     shape-outside: circle(50%);
     clip-path: circle(50%);
@@ -171,6 +173,10 @@ a:hover {
     margin-bottom: 30px;
 }
 
+.quote-stub {
+    lost-column: 0/1;
+}
+
 .copyright {
     text-align: right;
     lost-column: 1/1;
@@ -197,11 +203,6 @@ a:hover {
         font-size: 24px;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
     section {
         margin: 24px;
         lost-center: 640px;
@@ -216,7 +217,8 @@ a:hover {
     }
 
     .landing {
-        height: 100vh;
+        height: 40vh;
+        min-height: 320px;
         background: linear-gradient(
 		    rgba(0, 0, 0, 0.45),
 		    rgba(25, 0, 0, 0.7)
@@ -251,7 +253,11 @@ a:hover {
     }
 
     .quote {
-        lost-waffle: 1/2;
+        lost-column: 1/2;
+    }
+
+    .quote-stub {
+        lost-column: 1/2;
     }
 }
 
