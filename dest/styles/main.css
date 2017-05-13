@@ -12,7 +12,7 @@
     --color-grey-dark: #352F2E;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Varela');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Varela');
 
 html, body {
     margin: 0;
@@ -60,7 +60,7 @@ h5 {
     height: 55vh;
     background: linear-gradient(
 		rgba(0, 0, 0, .45),
-		rgba(0, 0, 0, .45)
+		rgba(25, 0, 0, .7)
     ), url(../images/mobile-landing.png);
     background-size: cover;
     background-position: center;
@@ -94,7 +94,7 @@ h5 {
     margin: 10px;
 }
 
-.icon-img {
+.icon-image {
     width: 24px;
     height: 24px;
 }
@@ -110,10 +110,37 @@ h5 {
         height: 100vh;
         background: linear-gradient(
 		    rgba(0, 0, 0, .45),
-		    rgba(0, 0, 0, .45)
+		    rgba(25, 0, 0, .7)
         ), url(../images/web-landing.png);
-    background-size: cover;
-    background-position: center;
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 24px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+    }
+
+    .tagline {
+        margin: 4px 0 20px;
+    }
+
+    .tagline-item {
+        margin: 4px;
+    }
+
+    .icon-item {
+        margin: 18px;
+    }
+
+    .icon-image {
+        width: 30px;
+        height: 30px;
     }
 }
 
