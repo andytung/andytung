@@ -39,14 +39,22 @@ h1, h2, h3, h4, h5, p, small, hr, section, header, footer, main {
 }
 
 section {
-    margin: 24px;
+    margin: 18px;
+}
+
+section:first-child {
+    margin: 24px 24px 18px;
+}
+
+section:last-child {
+    margin: 18px 24px 24px;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     background: var(--color-background-light);
 }
-
 
 h1, h5 {
     font-weight: normal;
@@ -153,6 +161,7 @@ a:hover {
 }
 
 .quote {
+    font-size: 13px;
     lost-column: 1/1;
     margin-bottom: 30px;
 }
@@ -184,8 +193,16 @@ a:hover {
     }
 
     section {
-        margin: 60px;
+        margin: 24px;
         lost-center: 640px;
+    }
+
+    section:first-child {
+        margin: 60px auto 24px;
+    }
+
+    section:last-child {
+        margin: 24px auto 60px;
     }
 
     .landing {
