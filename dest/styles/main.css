@@ -43,6 +43,10 @@ h5 {
     font-size: 16px;
 }
 
+p {
+    font-size: 14px;
+}
+
 .landing {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,6 +101,28 @@ h5 {
 .icon-image {
     width: 24px;
     height: 24px;
+}
+
+.about {
+    display: table;
+    margin: 24px;
+}
+
+.introduction {
+    margin: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    margin: auto 0 auto 15px;
+    float: right;
+    -webkit-shape-outside: circle(50%);
+            shape-outside: circle(50%);
+    -webkit-clip-path: circle(50%);
+            clip-path: circle(50%);
 }
 
 /* Extra Small Devices, Phones 480px */
