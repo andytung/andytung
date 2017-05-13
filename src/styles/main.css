@@ -1,20 +1,20 @@
 :root {
-    // primary theme color red
-    --color-red-primary: #C0392B;
-    --color-red-light: #D95E51;
+    /* primary theme color */
+    --color-primary-dark: #C0392B;
+    --color-primary-light: #D95E51;
 
-    // secondary theme color blue
-    --color-blue-dark: #1D6876;
-    --color-blue-light: #55929D;
+    /* secondary theme color */
+    --color-secondary-dark: #1D6876;
+    --color-secondary-light: #55929D;
 
-    // call-for-action success and warning
-    --color-green: #66C17A;
-    --color-orange: #D99351;
+    /* call-for-action success and warning */
+    --color-accent-dark: #66C17A;
+    --color-accent-light: #D99351;
 
-    // shade of grey and white
-    --color-grey-dark: #352F2E;
-    --color-grey-light: #F7F4F4;
-    --color-grey-lighter: #FEFEFE;
+    /* shade of grey and white */
+    --color-text-dark: #352F2E;
+    --color-text-light: #F7F4F4;
+    --color-background-light: #FEFEFE;
     --color-white: #FFFFFF;
 }
 
@@ -27,18 +27,23 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: var(--color-grey-lighter);
+	background: var(--color-background-lighter);
+    color: var(--color-text-dark);
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p, section, header {
     margin: 0;
     padding: 0;
 }
 
+section {
+    margin: 24px;
+}
+
 h1, h5 {
     font-weight: normal;
-    color: var(--color-grey-light);
+    color: var(--color-text-light);
 }
 
 h1 {
@@ -91,24 +96,22 @@ p {
     height: 24px;
 }
 
-.about {
-    display: table;
-    margin: 24px;
-}
-
-.introduction {
-    margin: auto;
-    text-align: left;
-    vertical-align: middle;
-}
-
 .avatar {
     width: 120px;
     height: 120px;
-    margin: auto 0 auto 15px;
+    margin-left: 15px;
     float: right;
     shape-outside: circle(50%);
     clip-path: circle(50%);
+}
+
+.introduction {
+    text-align: left;
+    padding-top: 42px;
+}
+
+.leading-text {
+    color: var(--color-primary-dark);
 }
 
 /* Extra Small Devices, Phones 480px */
@@ -118,16 +121,6 @@ p {
 
 /* Small Devices, Tablets 768px */
 @media only screen and (min-width: 48em) {
-    .landing {
-        height: 100vh;
-        background: linear-gradient(
-		    rgba(0, 0, 0, 0.45),
-		    rgba(25, 0, 0, 0.7)
-        ), url(../images/web-landing.png);
-        background-size: cover;
-        background-position: center;
-    }
-
     h1 {
         font-size: 60px;
     }
@@ -136,6 +129,21 @@ p {
         font-size: 24px;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
+    }
+
+    section {
+        margin: 60px;
+        lost-center: 640px;
+    }
+
+    .landing {
+        height: 100vh;
+        background: linear-gradient(
+		    rgba(0, 0, 0, 0.45),
+		    rgba(25, 0, 0, 0.7)
+        ), url(../images/web-landing.png);
+        background-size: cover;
+        background-position: center;
     }
 
     .tagline {

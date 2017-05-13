@@ -1,15 +1,11 @@
 :root {
-    // primary theme color red
-    --color-red-primary: #C0392B;
+    /* primary theme color */
 
-    // secondary theme color blue
-    --color-blue-dark: #1D6876;
+    /* secondary theme color */
 
-    // call-for-action success and warning
-    --color-green: #66C17A;
+    /* call-for-action success and warning */
 
-    // shade of grey and white
-    --color-grey-dark: #352F2E;
+    /* shade of grey and white */
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300|Varela');
@@ -21,13 +17,18 @@ html, body {
 
 body {
 	font-family: 'Varela', sans-serif;
-	background: #FEFEFE;
+	background: var(--color-background-lighter);
+    color: #352F2E;
     font-size: 16px;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p, section, header {
     margin: 0;
     padding: 0;
+}
+
+section {
+    margin: 24px;
 }
 
 h1, h5 {
@@ -103,26 +104,24 @@ p {
     height: 24px;
 }
 
-.about {
-    display: table;
-    margin: 24px;
-}
-
-.introduction {
-    margin: auto;
-    text-align: left;
-    vertical-align: middle;
-}
-
 .avatar {
     width: 120px;
     height: 120px;
-    margin: auto 0 auto 15px;
+    margin-left: 15px;
     float: right;
     -webkit-shape-outside: circle(50%);
             shape-outside: circle(50%);
     -webkit-clip-path: circle(50%);
             clip-path: circle(50%);
+}
+
+.introduction {
+    text-align: left;
+    padding-top: 42px;
+}
+
+.leading-text {
+    color: #C0392B;
 }
 
 /* Extra Small Devices, Phones 480px */
@@ -132,16 +131,6 @@ p {
 
 /* Small Devices, Tablets 768px */
 @media only screen and (min-width: 48em) {
-    .landing {
-        height: 100vh;
-        background: linear-gradient(
-		    rgba(0, 0, 0, .45),
-		    rgba(25, 0, 0, .7)
-        ), url(../images/web-landing.png);
-        background-size: cover;
-        background-position: center;
-    }
-
     h1 {
         font-size: 60px;
     }
@@ -150,6 +139,34 @@ p {
         font-size: 24px;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
+    }
+
+    section {
+        margin: 60px;
+        max-width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section:before {
+        content: '';
+        display: table;
+    }
+
+    section:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .landing {
+        height: 100vh;
+        background: linear-gradient(
+		    rgba(0, 0, 0, .45),
+		    rgba(25, 0, 0, .7)
+        ), url(../images/web-landing.png);
+        background-size: cover;
+        background-position: center;
     }
 
     .tagline {
