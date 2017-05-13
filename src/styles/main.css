@@ -73,6 +73,7 @@ h5 {
 
 p {
     font-size: 14px;
+    line-height: 22px;
 }
 
 small {
@@ -137,13 +138,17 @@ a:hover {
     clip-path: circle(50%);
 }
 
-.introduction {
+.intro {
     text-align: left;
-    padding-top: 42px;
+    padding-top: 24px;
 }
 
 .leading-text {
     color: var(--color-primary-dark);
+}
+
+.about-me {
+    line-height: 28px;
 }
 
 .footer {
@@ -192,6 +197,11 @@ a:hover {
         font-size: 24px;
     }
 
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
     section {
         margin: 24px;
         lost-center: 640px;
@@ -230,6 +240,10 @@ a:hover {
     .icon-image {
         width: 30px;
         height: 30px;
+    }
+
+    .about-me {
+        width: 640px;
     }
 
     .footer {
