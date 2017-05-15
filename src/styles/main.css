@@ -165,6 +165,15 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.topic-text:last-child {
+    margin-bottom: 0;
+}
+
+.contact {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
