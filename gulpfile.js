@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 let paths = {
     stylesSrc: './src/styles/**/*.css',
     stylesDest: './dest/styles',
-    viewsSrc: './src/views/index.pug',
+    viewsSrc: './src/views/*.pug',
     viewsWatchSrc: './src/views/**/*.pug',
     viewsDest: '.'
 }
