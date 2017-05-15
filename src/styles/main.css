@@ -19,6 +19,7 @@
     --color-white: #FFFFFF;
 
     --page-section-width: 520px;
+    --page-section-width-mobile: 400px;
     --page-footer-width: 640px;
 }
 
@@ -205,7 +206,18 @@ a:hover {
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (min-width: 30em) {
+    section {
+        margin: 24px;
+        lost-center: var(--page-section-width-mobile);
+    }
 
+    section:first-child {
+        margin: 60px auto 24px;
+    }
+
+    section:last-child {
+        margin: 24px auto 60px;
+    }
 }
 
 /* Small Devices, Tablets 768px */
