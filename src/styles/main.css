@@ -160,7 +160,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    vertical-alignment: middle;
     font-size: 14px;
     background: rgba(53, 47, 47, 0.5);
 }
@@ -180,6 +179,11 @@ a:hover {
 
 .topic-title {
     margin: 0 0 10px;
+}
+
+.topic-middle-text {
+    line-height: 1.8;
+    margin-bottom: 24px;
 }
 
 .topic-text {
