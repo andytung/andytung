@@ -202,7 +202,7 @@ a:hover {
 }
 
 .line-bottom {
-    margin: 14px 0 2px;
+    margin: 14px 0 20px;
 }
 
 .quote {
@@ -274,31 +274,6 @@ a:hover {
 }
 
 .copyright:nth-child(1n + 1) {
-    clear: both;
-}
-
-.resume {
-    text-align: right;
-    width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
-    margin: 2px 0 14px;
-}
-
-.resume:nth-child(1n) {
-    float: left;
-    margin-right: 30px;
-    clear: none;
-}
-
-.resume:last-child {
-    margin-right: 0;
-}
-
-.resume:nth-child(1n) {
-    margin-right: 0;
-    float: right;
-}
-
-.resume:nth-child(1n + 1) {
     clear: both;
 }
 

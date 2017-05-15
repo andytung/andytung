@@ -176,7 +176,7 @@ a:hover {
 }
 
 .line-bottom {
-    margin: 14px 0 2px;
+    margin: 14px 0 20px;
 }
 
 .quote {
@@ -192,12 +192,6 @@ a:hover {
 .copyright {
     text-align: right;
     lost-column: 1/1;
-}
-
-.resume {
-    text-align: right;
-    lost-column: 1/1;
-    margin: 2px 0 14px;
 }
 
 /* Extra Small Devices, Phones 480px */
