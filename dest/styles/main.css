@@ -59,6 +59,10 @@ h1 {
     font-size: 42px;
 }
 
+h2 {
+    font-size: 24px;
+}
+
 h5 {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -67,7 +71,8 @@ h5 {
 
 p {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 small {
@@ -165,7 +170,6 @@ a:hover {
 }
 
 .intro {
-    text-align: left;
     padding-top: 24px;
 }
 
@@ -173,8 +177,21 @@ a:hover {
     color: #C0392B;
 }
 
-.about-me {
-    line-height: 28px;
+.topic-title {
+    margin: 0 0 10px;
+}
+
+.topic-text {
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.accent-light-text {
+    color: #D99351;
+}
+
+.accent-dark-text {
+    color: #66C17A;
 }
 
 .footer {
@@ -362,8 +379,8 @@ a:hover {
         height: 30px;
     }
 
-    .about-me {
-        width: 640px;
+    .content {
+        width: 520px;
     }
 
     .footer {
