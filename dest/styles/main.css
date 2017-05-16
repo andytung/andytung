@@ -39,6 +39,10 @@ section:last-child {
     margin: 18px 24px 24px;
 }
 
+section:only-child {
+    margin: 24px;
+}
+
 main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -344,6 +348,10 @@ a:hover {
     section:last-child {
         margin: 24px auto 60px;
     }
+
+    section:only-child {
+        margin: 60px auto;
+    }
 }
 
 /* Small Devices, Tablets 768px */
@@ -355,31 +363,23 @@ a:hover {
     h5 {
         font-size: 24px;
     }
-
+    
     section {
         margin: 24px;
         max-width: 520px;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     section:before {
         content: '';
         display: table;
     }
-
+    
     section:after {
         content: '';
         display: table;
         clear: both;
-    }
-
-    section:first-child {
-        margin: 60px auto 24px;
-    }
-
-    section:last-child {
-        margin: 24px auto 60px;
     }
 
     .landing {
