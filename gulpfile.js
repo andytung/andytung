@@ -1,7 +1,6 @@
 const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
-const cssnano = require('cssnano');
 const lost = require('lost');
 const cssnext = require('postcss-cssnext');
 const browserSync = require('browser-sync').create();
@@ -16,7 +15,6 @@ let paths = {
 
 let plugins = [
     cssnext(),
-    //cssnano(),
     lost()
 ];
 
@@ -54,8 +52,8 @@ function handleError(error) {
     this.emit('end');
 }
 
-gulp.task('build', ['browser-sync', 'styles', 'views']);
+gulp.task('build', ['styles', 'views']);
 
-gulp.task('serve', ['build', 'watch']);
+gulp.task('serve', ['browser-sync', 'build', 'watch']);
 
 gulp.task('default', ['serve']);
